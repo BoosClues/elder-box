@@ -1,1 +1,42 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tiki Vampire Puzzle Box</title>
+  <style>
+    body { margin:0; overflow:hidden; background:#000; }
+    canvas { display:block; }
+    #overlay {
+      position:absolute;
+      top:0;left:0;
+      width:100%;
+      color:#fff;
+      padding:10px;
+      font-family:sans-serif;
+      pointer-events:none;
+    }
+    #glyphGrid {
+      display:none;
+      position:absolute;
+      top:20%;
+      left:50%;
+      transform:translateX(-50%);
+      background:rgba(0,0,0,0.8);
+      padding:10px;
+      border:1px solid #444;
+    }
+    #glyphGrid img {
+      width:64px;
+      height:64px;
+      margin:5px;
+      cursor:pointer;
+    }
+  </style>
+</head>
+<body>
+  <div id="overlay"></div>
+  <div id="glyphGrid"></div>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.161.0/build/three.min.js"></script>
+  <script type="module" src="script.js"></script>
+</body>
+</html>
