@@ -54,7 +54,7 @@ class PuzzleGame {
   initBox() {
     const geom = new THREE.BoxGeometry(1,1,1);
     const texLoader = new THREE.TextureLoader();
-    const boxTex = texLoader.load('assets/textures/obsidian.jpg');
+    const boxTex = texLoader.load('textures/obsidian.jpg');
     const mat = new THREE.MeshStandardMaterial({map: boxTex});
     this.box = new THREE.Mesh(geom,mat);
     this.scene.add(this.box);
